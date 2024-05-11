@@ -17,6 +17,10 @@
 
 }
 
+.intro-name{
+  font-family:var(--header-font)!important;
+}
+
 @media (min-width: 1200px){
     .container {
         max-width: 90%;
@@ -44,7 +48,7 @@
 
 
 /*===========================
-    3.ABOUT css 
+    ABOUT css 
 ===========================*/
 
 @media (max-width: 767px) {

@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700|Hind:400,500,600,700|Quattrocento:400,700");
+
+@font-face {
+  font-family: maragsa;
+  src: url(/src/assets/fonts/Maragsâ-Display.otf)format("opentype");
+}
+@font-face {
+  font-family: garet;
+  src: url(/src/assets/fonts/Garet-Book.otf)format("opentype");
+}
+
+:root{
+    /*===== Colors =====*/
+  --body-color: #FFFCF5;
+  --intro-color: #EB3656;
+  --first-color-hover: #005a9c;
+  --second-color: #0e2431;
+  --container-color: #ffffff;
+  --link-color: #408bd0;
+  /*===== Typography =====*/
+  --body-font: "Poppins", sans-serif;
+  --header-font: 'maragsa', sans-serif;
+  --header-weight: 400;
+
+  --big-font-size: 2rem;
+  --medium-font-size: 1.5rem;
+  --normal-font-size: 0.938rem;
+    /*===== Margines =====*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+}
+@media screen and (min-width: 768px) {
+  :root {
+    --big-font-size: 3.5rem;
+    --medium-font-size: 2rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+body {
+    margin:0;
+    background-color: var(--body-color);
+}

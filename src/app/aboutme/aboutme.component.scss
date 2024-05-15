@@ -5,3 +5,87 @@
 .sub-title{
   color:var(--intro-color);
 }
+
+/*===== All Button Style =====*/
+.main-btn {
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #EB3656;
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 48px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 5;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  background-color: #EB3656;
+  -webkit-box-shadow: 0px 5px 16px 0px rgba(235, 54, 86, 0.65);
+  -moz-box-shadow: 0px 5px 16px 0px rgba(235, 54, 86, 0.65);
+  box-shadow: 0px 5px 16px 0px rgba(235, 54, 86, 0.65);
+  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase; }
+  .main-btn i {
+    margin-right: 5px; }
+  .main-btn:hover {
+    background-color: #fff;
+    color: #EB3656;
+    border-color: #EB3656; }
+
+
+    /*===========================
+      4.SERVICES css 
+===========================*/
+@media (max-width: 767px) {
+  .services-area {
+    padding-top: 75px;
+    padding-bottom: 80px; } }
+
+.single-services {
+  padding: 50px 30px;
+  background-color: #fff;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s; }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .single-services {
+      padding: 30px 10px; } }
+  @media (max-width: 767px) {
+    .single-services {
+      padding: 30px 10px; } }
+  .single-services .services-icon i {
+    font-size: 52px;
+    color: #EB3656;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s; }
+  .single-services .services-content .services-title {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Barlow', sans-serif;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s; }
+  .single-services:hover {
+    background-color: #EB3656; }
+    .single-services:hover .services-icon i {
+      color: #fff; }
+    .single-services:hover .services-content .services-title,
+    .single-services:hover .services-content p {
+      color: #fff; }

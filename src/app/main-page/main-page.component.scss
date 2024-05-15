@@ -5,7 +5,7 @@
     max-height:90vh;
 }
 .intro{
-    border: 1px solid #000;
+    border: 2px solid #B69D87;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     width: 100%; /* Set the maximum width for the entire section */
     margin: 0 auto; /* Center the section horizontally */
@@ -15,6 +15,25 @@
     margin:0 auto;
     padding: 5vw; /* Use a percentage of the viewport width for padding */
 
+}
+.intro-redirect{
+  float:right;
+  font-family: var(--subheader-font);
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+
+}
+.intro-redirect a{
+  color: black;
+  display: block; /* Display links as block for better spacing */
+  font-size: 1.2vw; /* Set font size for the links */
+
+}
+.intro-redirect a:hover{
+  color: var(--intro-color)
+}
+hr{
+  border: 1px solid #B69D87;
 }
 
 .intro-name{
@@ -139,7 +158,7 @@
                 .about-image .about-btn .main-btn span {
                   font-size: 28px; } }
             .about-image .about-btn .main-btn:hover {
-              border-color: #EB3656; }
+              border-color: var(--intro-color) }
             @media (max-width: 767px) {
               .about-image .about-btn .main-btn {
                 line-height: 48px;
@@ -153,3 +172,60 @@
                 font-size: 14px;
                 margin-top: -25px; } }
               
+
+
+/* For smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
+    height: auto; /* Allow container to adjust its height */
+    max-width: 100%; /* Adjust maximum width for smaller screens */
+  }
+
+
+  .about-image {
+    display: none; /* Hide the image on screens smaller than 768px */
+  }
+
+  .about-image::before {
+    display: none; /* Hide the background image on smaller screens */
+  }
+
+  .intro-content {
+    padding: 3vw; /* Adjust padding for smaller screens */
+  }
+
+  .intro-content .intro-position {
+    font-size: 3vw; /* Adjust font size for smaller screens */
+  }
+
+  .intro-content .intro-name {
+    font-size: 8vw; /* Adjust font size for smaller screens */
+  }
+
+  .intro-redirect {
+    float: none; /* Remove float for better alignment */
+    text-align: center; /* Center-align the links */
+
+  }
+
+  .intro-redirect a {
+    display: block; /* Display links as block for better spacing */
+    font-size: 2.5vw; /* Decrease font size for smaller screens */
+
+  }
+
+  .about-image .single-image {
+    width: 100%; /* Adjust image width for smaller screens */
+  }
+
+  .about-btn {
+    margin: 0 auto; /* Center-align the button */
+    text-align: center; /* Center-align the button text */
+  }
+
+  .about-btn .main-btn {
+    padding: 0 20px; /* Adjust button padding for smaller screens */
+    font-size: 16px; /* Adjust button font size for smaller screens */
+    line-height: 48px; /* Adjust line height for better vertical alignment */
+  }
+}
